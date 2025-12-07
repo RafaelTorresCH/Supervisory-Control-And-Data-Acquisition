@@ -74,7 +74,7 @@ El flujo de datos sigue una arquitectura **Edge-to-Cloud**:
 Clonar el repositorio y crear un entorno virtual:
 
 ```bash
-git clone [https://github.com/tu-usuario/scada-iot.git](https://github.com/tu-usuario/scada-iot.git)
+git clone [https://github.com/tu-usuario/scada-iot.git](https://github.com/tu-usuario/scada-iot.git)](https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git)
 cd scada-iot
 python3 -m venv venv
 source venv/bin/activate
