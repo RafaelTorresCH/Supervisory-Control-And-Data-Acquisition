@@ -2,8 +2,6 @@
 
 Este proyecto implementa un sistema **SCADA (Supervisory Control and Data Acquisition)** híbrido y escalable. Integra dispositivos de borde (ESP32) con un Gateway local (Raspberry Pi) y almacenamiento en la nube (InfluxDB Cloud), permitiendo la supervisión en tiempo real, control de actuadores y gestión de alarmas críticas vía Telegram.
 
-![Dashboard Preview](assets/dashboard_preview.png)
-*(Reemplaza esto con una captura de tu dashboard)*
 
 ## 📋 Características Principales
 
