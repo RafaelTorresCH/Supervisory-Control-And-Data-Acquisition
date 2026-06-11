@@ -1,0 +1,26 @@
+IO_LOC "clk_27m" H11;
+IO_PORT "clk_27m" IO_TYPE=LVCMOS33;
+
+IO_LOC "i2s_bclk" N15;
+IO_PORT "i2s_bclk" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "i2s_lrclk" P16;
+IO_PORT "i2s_lrclk" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "i2s_dacdat" P15;
+IO_PORT "i2s_dacdat" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "pa_en" R16;
+IO_PORT "pa_en" IO_TYPE=LVCMOS33 DRIVE=8;
+
+IO_LOC "btn_n0" T10;
+IO_PORT "btn_n0" IO_TYPE=LVCMOS33;
+
+IO_LOC "btn_n1" T3;
+IO_PORT "btn_n1" IO_TYPE=LVCMOS15;
+
+IO_LOC "btn_n2" T2;
+IO_PORT "btn_n2" IO_TYPE=LVCMOS15;
+
+IO_LOC "btn_n3" D7;
+IO_PORT "btn_n3" IO_TYPE=LVCMOS15;

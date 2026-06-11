@@ -1,0 +1,44 @@
+[
+ {
+  "InstFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/string_voice.v",
+  "InstLine" : 1,
+  "InstName" : "string_voice",
+  "ModuleFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/string_voice.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "string_voice"
+ },
+ {
+  "InstFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/top_audio.v",
+  "InstLine" : 1,
+  "InstName" : "top_audio",
+  "ModuleFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/top_audio.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top_audio",
+  "SubInsts" : [
+   {
+    "InstFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/top_audio.v",
+    "InstLine" : 20,
+    "InstName" : "pll_inst",
+    "ModuleFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/gowin_rpll/gowin_rpll.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_rPLL"
+   },
+   {
+    "InstFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/top_audio.v",
+    "InstLine" : 25,
+    "InstName" : "tone_inst",
+    "ModuleFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/string_bank_4.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "tone_bank_4"
+   },
+   {
+    "InstFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/top_audio.v",
+    "InstLine" : 35,
+    "InstName" : "tx_module",
+    "ModuleFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/I2S_TX.v",
+    "ModuleLine" : 5,
+    "ModuleName" : "i2s_tx"
+   }
+  ]
+ }
+]

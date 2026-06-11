@@ -1,0 +1,33 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/I2S_TX.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/gowin_rpll/gowin_rpll.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/string_bank_4.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/string_voice.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/src/top_audio.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "C:/Users/torre/Downloads/pure_tone_432_FPGA-main/pure_tone_432_FPGA-main/impl/temp/rtl_parser.result",
+ "Top" : "top_audio",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}
