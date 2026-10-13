@@ -68,13 +68,13 @@ The data flow follows an Edge-to-Cloud architecture:
 
 ## Final Project Structure
 
-The final implementation is organized in [PFINAL](PFINAL/):
+The final implementation is organized in [main](main/):
 
 * `gateway/`: Flask application and InfluxDB test utility.
 * `firmware/`: PlatformIO project for the ESP32 simulator.
 * `docs/`: Architecture diagrams and verification plan.
 
-See the [PFINAL README](PFINAL/README.md) for the execution commands and the
+See the [PFINAL README](main/README.md) for the execution commands and the
 complete project map.
 
 ## Security Notice
