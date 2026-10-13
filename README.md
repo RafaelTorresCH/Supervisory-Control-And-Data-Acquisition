@@ -66,6 +66,25 @@ The data flow follows an Edge-to-Cloud architecture:
 
 ---
 
+## Final Project Structure
+
+The final implementation is organized in [PFINAL](PFINAL/):
+
+* `gateway/`: Flask application and InfluxDB test utility.
+* `firmware/`: PlatformIO project for the ESP32 simulator.
+* `docs/`: Architecture diagrams and verification plan.
+
+See the [PFINAL README](PFINAL/README.md) for the execution commands and the
+complete project map.
+
+## Security Notice
+
+Keep Wi-Fi, InfluxDB and Telegram credentials outside the repository when
+deploying the system. Use environment variables or a local configuration file
+excluded from version control.
+
+---
+
 ## Installation and Configuration
 
 ### 1. Gateway Configuration (Raspberry Pi)
@@ -73,7 +92,18 @@ The data flow follows an Edge-to-Cloud architecture:
 Clone the repository and create a virtual environment:
 
 ```bash
-git clone [https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git](https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git)
-cd scada-iot
+git clone https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git
+cd Supervisory-Control-And-Data-Acquisition/PFINAL/gateway
 python3 -m venv venv
 source venv/bin/activate
+python app.py
+```
+
+### 2. Firmware (ESP32)
+
+Open `PFINAL/firmware` in PlatformIO and build/upload the project:
+
+```bash
+cd Supervisory-Control-And-Data-Acquisition/PFINAL/firmware
+pio run
+pio run --target upload
