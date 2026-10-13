@@ -6,23 +6,23 @@ This project implements a hybrid and scalable SCADA (Supervisory Control and Dat
 ## Main Features
 
 ### Data Acquisition
-* **Machinery Simulation:** ESP32 firmware capable of simulating multiple industrial machines with physical behaviors (thermal inertia, sinusoidal vibration, and static noise).
-* **Dynamic Fleet:** Support for n simultaneous machines. The system automatically detects and registers new machines added to the network.
-* **Circular Buffer:** Real-time Raw traffic monitor for JSON packet debugging.
+- **Machinery Simulation:** ESP32 firmware capable of simulating multiple industrial machines with physical behaviors (thermal inertia, sinusoidal vibration, and static noise).
+- **Dynamic Fleet:** Support for n simultaneous machines. The system automatically detects and registers new machines added to the network.
+- **Circular Buffer:** Real-time Raw traffic monitor for JSON packet debugging.
 
 ### Supervision
-* **Modern Web Dashboard:** Dark Mode interface built with Bootstrap 5 and ApexCharts.
-* **Real-Time Visualization:** Clean trend charts (without visual noise) for Temperature and Vibration.
-* **Live KPIs:** Instant numerical indicators.
-* **Server Health Monitor:** Visualization of CPU, RAM, Disk, and Temperature usage of the Raspberry Pi.
+- **Modern Web Dashboard:** Dark Mode interface built with Bootstrap 5 and ApexCharts.
+- **Real-Time Visualization:** Clean trend charts (without visual noise) for Temperature and Vibration.
+- **Live KPIs:** Instant numerical indicators.
+- **Server Health Monitor:** Visualization of CPU, RAM, Disk, and Temperature usage of the Raspberry Pi.
 
 ### Control
-* **Bidirectional Control:** Adjustment of the sensor sampling frequency (ESP32) from the web interface (from 200ms to 5 minutes).
-* **Alarm Management:** Independent configuration of temperature and vibration thresholds (Setpoints) per machine.
+- **Bidirectional Control:** Adjustment of the sensor sampling frequency (ESP32) from the web interface (from 200ms to 5 minutes).
+- **Alarm Management:** Independent configuration of temperature and vibration thresholds (Setpoints) per machine.
 
 ### Notifications and Reports
-* **Telegram Integration:** Real-time alerts bot with anti-spam logic (60s Cool-down).
-* **Data Export:** Generation of historical reports in .csv format (Excel) directly from the browser.
+- **Telegram Integration:** Real-time alerts bot with anti-spam logic (60s Cool-down).
+- **Data Export:** Generation of historical reports in .csv format (Excel) directly from the browser.
 
 ---
 
@@ -43,24 +43,24 @@ The data flow follows an Edge-to-Cloud architecture:
 
 ## Technologies Used
 
-* **Hardware:**
+- **Hardware:**
     * Espressif ESP32 (DevKit V1)
     * Raspberry Pi 3B+/4 (Gateway)
-* **Backend & Gateway:**
+- **Backend & Gateway:**
     * Python 3.x
     * Flask (Web Microframework)
     * InfluxDB Client
     * PSUtil (System monitor)
-* **Frontend:**
+- **Frontend:**
     * HTML5 / CSS3 / JavaScript
     * Bootstrap 5 (UI Kit)
     * ApexCharts.js (Data visualization)
     * FontAwesome (Iconography)
-* **Firmware:**
+- **Firmware:**
     * C++ / Arduino Framework
     * ArduinoJson v6
     * HTTPClient
-* **External Services:**
+- **External Services:**
     * InfluxDB Cloud (AWS region us-east-1)
     * Telegram Bot API
 
@@ -70,11 +70,11 @@ The data flow follows an Edge-to-Cloud architecture:
 
 The final implementation is organized in [main](main/):
 
-* `gateway/`: Flask application and InfluxDB test utility.
-* `firmware/`: PlatformIO project for the ESP32 simulator.
-* `docs/`: Architecture diagrams and verification plan.
+- `gateway/`: Flask application and InfluxDB test utility.
+- `firmware/`: PlatformIO project for the ESP32 simulator.
+- `docs/`: Architecture diagrams and verification plan.
 
-See the [PFINAL README](main/README.md) for the execution commands and the
+See the [main README](main/README.md) for the execution commands and the
 complete project map.
 
 ## Security Notice
@@ -92,18 +92,8 @@ excluded from version control.
 Clone the repository and create a virtual environment:
 
 ```bash
-git clone https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git
-cd Supervisory-Control-And-Data-Acquisition/PFINAL/gateway
+git clone [https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git](https://github.com/RafaelTorresCH/Supervisory-Control-And-Data-Acquisition.git)
+cd Supervisory-Control-And-Data-Acquisition/main/gateway
 python3 -m venv venv
 source venv/bin/activate
 python app.py
-```
-
-### 2. Firmware (ESP32)
-
-Open `PFINAL/firmware` in PlatformIO and build/upload the project:
-
-```bash
-cd Supervisory-Control-And-Data-Acquisition/PFINAL/firmware
-pio run
-pio run --target upload
